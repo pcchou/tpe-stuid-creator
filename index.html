@@ -9,6 +9,23 @@
   </head>
 
   <body>
+    <script>
+window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '669620649862128',
+    xfbml      : true,
+    version    : 'v2.7'
+  });
+};
+
+(function(d, s, id){
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+    </script>
     <img id="barcode" style="display: none;" />
     <img id="photo" style="display: none;" />
     <img id="logo" style="display: none;" />
@@ -80,11 +97,13 @@
         </div>
       </div>
     </main>
+    <div class="fb-comments" data-href="https://gh.pcchou.me/tpe-stuid-creator" data-numposts="5"></div>
     <footer class="page-footer lime">
       <div class="container">
         <span class="right" id="footnote">By PCC，靈感來自：<a href="https://ntu.shouko.tw/id-creator/">NTU ID Creator</a>，感謝<a href="https://www.facebook.com/BlameOnWilliamSociety/">譴責蔡宏文自救會</a>。</span>
       </div>
     </footer>
+
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
     <script src='https://cdn.jsdelivr.net/jsbarcode/3.3.16/barcodes/JsBarcode.code39.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js'></script>
