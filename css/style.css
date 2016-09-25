@@ -1,0 +1,28 @@
+.valign-wrapper {
+  height: 80vh;
+}
+
+.btn, .btn-large {
+  width: 100%;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+main {
+  flex: 1 0 auto;
+}
+
+#card {
+  border: 3px solid;
+  border-radius: 20px;
+  width: 100%;
+}
+
+#footnote {
+  margin-bottom: 5px;
+  font-size: 1em;
+}

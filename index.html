@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>A Pen by  Ping-yu Philip Chou</title>
+    
+    
+    
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <img id="barcode" style="display: none;" />
+<img id="photo" style="display: none;" />
+<img id="logo" style="display: none;" />
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col s6 valign-wrapper" id="card-parent">
+        <canvas id="card" class="valign"></canvas>
+      </div>
+      <div class="col s6">
+        <h4>北市一代數位學生證產生器</h4>
+        <h6>從此脫離臺北卡受害者的宿命</h6>
+        <div class="row">
+          <div class="file-field input-field col s6">
+            <div class="btn upload blue darken-3">
+              <span>上傳照片</span>
+              <input type='file' id="photo_file" />
+            </div>
+          </div>
+          <div class="file-field input-field col s6">
+            <div class="btn upload blue darken-3">
+              <span>上傳校徽</span>
+              <input type='file' id="logo_file" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s8">
+            <input type='text' id="name" alt="名子" placeholder="名子" />
+          </div>
+          <div class="col s4">
+            <input type='text' id="student_number" alt="學號" placeholder="學號" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s7">
+            <input class="with-gap" name="school_type" type="radio" id="hs" checked />
+            <label for="hs">高中</label>&nbsp;
+            <input class="with-gap" name="school_type" type="radio" id="jhs" />
+            <label for="jhs">國中</label>&nbsp;
+            <input class="with-gap" name="school_type" type="radio" id="es" />
+            <label for="es">國小</label>
+          </div>
+          <div class="col s5">
+            <div class="switch">
+              <label>
+      白底
+      <input type="checkbox" id="white_logo">
+      <span class="lever"></span>
+      透明
+    </label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <input type='text' id="school_name" alt="校名" placeholder="校名" />
+            <input type='text' id="school_address" alt="學校地址" placeholder="學校地址" />
+            <input type='text' id="school_phone" alt="學校電話" placeholder="學校電話" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <a class="btn-large waves-effect waves-light center-align" type="submit" id="download">
+              <i class="material-icons left">send</i>立即擁有</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</main>
+<footer class="page-footer">
+  <div class="container">
+    <span class="right" id="footnote">靈感來自：<a href="https://ntu.shouko.tw/id-creator/">臺大學生證產生器</a>、感謝<a href="https://www.facebook.com/BlameOnWilliamSociety/">譴責蔡宏文自救會</a>。</span>
+  </div>
+</footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+<script src='https://cdn.jsdelivr.net/jsbarcode/3.3.16/barcodes/JsBarcode.code39.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
